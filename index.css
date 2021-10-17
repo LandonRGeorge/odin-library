@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+table, th, td {
+    /*border: 1px solid black;*/
+    /*border-collapse: collapse;*/
+}
+
+th {
+    background-color: lightgrey;
+}
+
+.delete-button {
+    background-color: red;
+}
+
+#new-book-form > div {
+    margin: 1rem 0;
+}
+
+#title-header, #author-header, #read-header {
+    width: 200px;
+}
+
+#pages-header {
+    width: 100px;
+}
+
+#delete-header {
+    width: 80px;
+}
+
+.delete-cell {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-button {
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.delete-button:active {
+    box-shadow: 1px 3px lightgrey;
+    background-color: #b80404;
+}
+
+#new-book-form {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightsteelblue;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#new-book-form-button {
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+

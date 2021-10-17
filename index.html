@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Book Library</h1>
+    <button id="new-book-form-button">Toggle Book Form</button>
+    <form action="" id="new-book-form" class="hidden">
+        <h2>New Book Form</h2>
+        <div>
+            <label for="title-input">Title:</label>
+            <input type="text" id="title-input">
+        </div>
+        <div>
+            <label for="author-input">Author:</label>
+            <input type="text" id="author-input">
+        </div>
+        <div>
+            <label for="pages-input">Pages:</label>
+            <input type="text" id="pages-input">
+        </div>
+        <div>
+            Reading status:
+            <div>
+                <input type="radio" name="read-input" id="read-no" value="not read" checked>
+                <label for="read-no">Not read</label>
+            </div>
+            <div>
+                <input type="radio" name="read-input" id="read-yes" value="have read">
+                <label for="read-yes">Have read</label>
+            </div>
+            <div>
+                <input type="radio" name="read-input" id="read-currently" value="currently reading">
+                <label for="read-currently">Currently reading</label>
+            </div>
+        </div>
+        <button type="button" id="new-book-submit-button">Submit</button>
+    </form>
+    <table id="book-table">
+        <thead>
+            <tr>
+                <th id="title-header">title</th>
+                <th id="author-header">author</th>
+                <th id="pages-header">pages</th>
+                <th id="read-header">read</th>
+                <th id="delete-header">delete</th>
+            </tr>
+        </thead>
+        <tbody id="book-table-body"></tbody>
+    </table>
+</body>
+</html>
